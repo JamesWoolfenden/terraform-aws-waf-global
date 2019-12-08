@@ -1,7 +1,10 @@
-output "cluster" {
-  value = aws_rds_cluster.default
+output "ips" {
+  value = aws_waf_ipset.ips
 }
 
-output "instances" {
-  value = aws_rds_cluster_instance.instances
+
+output "ip_whitelist" { value = aws_waf_web_acl.ip_whitelist }
+
+output "ip_match" {
+  value = aws_waf_rule.ip_match
 }

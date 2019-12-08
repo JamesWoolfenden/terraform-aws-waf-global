@@ -1,4 +1,4 @@
 module "waf" {
-    source="../../"
-    ipset=var.ipset
+  source = "../../"
+  ipset  = var.ipset
 }

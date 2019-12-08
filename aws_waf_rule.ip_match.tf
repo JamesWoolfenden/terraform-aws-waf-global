@@ -8,4 +8,3 @@ resource "aws_waf_rule" "ip_match" {
     type    = "IPMatch"
   }
 }
-

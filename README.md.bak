@@ -23,19 +23,7 @@ module "aurora" {
 }
 ```
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-## Inputs
-
-| Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| ipset | COmplex object to describe and populate aws_waf_ipset | string | n/a | yes |
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
-| cluster |  |
-| instances |  |
-
+I_WANT_TO_BE_REPLACED
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Related Projects
 

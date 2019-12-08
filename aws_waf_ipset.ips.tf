@@ -10,4 +10,3 @@ resource "aws_waf_ipset" "ips" {
     }
   }
 }
-
