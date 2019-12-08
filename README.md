@@ -9,9 +9,9 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 ## Usage
 
-These is just a basic illustration.
+This here is just a basic illustration.
 
-Include this repository as a module in your existing terraform code:
+Include this repository as a module in your existing Terraform code:
 
 ```terraform
 module "waf-global" {
@@ -27,7 +27,7 @@ module "waf-global" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| ipset | COmplex object to describe and populate aws_waf_ipset | string | n/a | yes |
+| ipset | Complex object to describe and populate aws_waf_ipset | string | n/a | yes |
 
 ## Outputs
 
