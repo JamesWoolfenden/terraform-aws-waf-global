@@ -21,6 +21,7 @@ module "waf-global" {
   common_tags     = var.common_tags
 }
 ```
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Inputs
 
