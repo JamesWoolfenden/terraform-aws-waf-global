@@ -17,7 +17,7 @@ Include this repository as a module in your existing terraform code:
 module "waf-global" {
   source          = "JamesWoolfenden/waf-global/aws"
   version         = "0.0.2"
-  ip_set          = var.ip+set
+  ip_set          = var.ip_set
   common_tags     = var.common_tags
 }
 ```
