@@ -54,6 +54,7 @@ No requirements.
 | ip\_match | n/a |
 | ip\_whitelist | n/a |
 | ips | n/a |
+| web\_acl\_id | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Related Projects
