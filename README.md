@@ -1,6 +1,11 @@
 [![Slalom][logo]](https://slalom.com)
 
-# terraform-aws-waf-global [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-waf-global/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-waf-global) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-waf-global.svg)](https://github.com/JamesWoolfenden/terraform-aws-waf-global/releases/latest)
+# terraform-aws-waf-global
+
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-waf-global/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-waf-global)
+[![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-waf-global.svg)](https://github.com/JamesWoolfenden/terraform-aws-waf-global/releases/latest)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![pre-commit](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
 Terraform module - creates global WAF
 
@@ -23,18 +28,32 @@ module "waf-global" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| ipset | Complex object to describe and populate aws_waf_ipset | string | n/a | yes |
+|------|-------------|------|---------|:--------:|
+| acl\_name | n/a | `string` | `"IPWhiteListWebACL"` | no |
+| common\_tags | n/a | `map` | n/a | yes |
+| ipset | Complex object to describe and populate aws\_waf\_ipset | `any` | n/a | yes |
+| metric\_name | n/a | `string` | `"IPWhiteListWebACL"` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| cluster |  |
-| instances |  |
+| ip\_match | n/a |
+| ip\_whitelist | n/a |
+| ips | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Related Projects
@@ -57,7 +76,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright � 2019-2019 [Slalom, LLC](https://slalom.com)
+Copyright © 2019-2020 [Slalom, LLC](https://slalom.com)
 
 ## License
 
@@ -92,8 +111,8 @@ under the License.
 [logo]: https://gist.githubusercontent.com/JamesWoolfenden/5c457434351e9fe732ca22b78fdd7d5e/raw/15933294ae2b00f5dba6557d2be88f4b4da21201/slalom-logo.png
 [website]: https://slalom.com
 [github]: https://github.com/jameswoolfenden
-[linkedin]: https://www.linkedin.com/company/slalom-consulting/
-[twitter]: https://twitter.com/Slalom
+[linkedin]: https://www.linkedin.com/in/jameswoolfenden/
+[twitter]: https://twitter.com/JimWoolfenden
 
 [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-waf-global&url=https://github.com/JamesWoolfenden/terraform-aws-waf-global
 [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-waf-global&url=https://github.com/JamesWoolfenden/terraform-aws-waf-global

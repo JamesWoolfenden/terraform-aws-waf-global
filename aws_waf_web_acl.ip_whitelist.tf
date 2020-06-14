@@ -1,7 +1,7 @@
 resource "aws_waf_web_acl" "ip_whitelist" {
 
-  name        = "IPWhiteListWebACL"
-  metric_name = "IPWhiteListWebACL"
+  name        = var.acl_name
+  metric_name = var.metric_name
 
   default_action {
     type = "BLOCK"
@@ -18,4 +18,6 @@ resource "aws_waf_web_acl" "ip_whitelist" {
     rule_id  = aws_waf_rule.ip_match.id
     type     = "REGULAR"
   }
+
+  tags = var.common_tags
 }

@@ -9,4 +9,5 @@ resource "aws_waf_ipset" "ips" {
       value = list_item.value
     }
   }
+
 }
