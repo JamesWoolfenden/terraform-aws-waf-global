@@ -28,10 +28,6 @@ module "waf-global" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-## Requirements
-
-No requirements.
-
 ## Providers
 
 | Name | Version |
@@ -41,7 +37,7 @@ No requirements.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+|------|-------------|------|---------|:-----:|
 | acl\_name | n/a | `string` | `"IPWhiteListWebACL"` | no |
 | common\_tags | n/a | `map` | n/a | yes |
 | ipset | Complex object to describe and populate aws\_waf\_ipset | `any` | n/a | yes |
