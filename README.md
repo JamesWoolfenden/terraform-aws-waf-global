@@ -5,7 +5,7 @@
 [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-waf-global/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-waf-global)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-waf-global.svg)](https://github.com/JamesWoolfenden/terraform-aws-waf-global/releases/latest)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![pre-commit](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
+[![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
 Terraform module - creates global WAF
 
@@ -15,6 +15,8 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 ## Usage
 
 This here is just a basic illustration.
+
+![waf-global](./diagram/waf-global.png)
 
 Include this repository as a module in your existing Terraform code:
 
