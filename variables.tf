@@ -4,15 +4,18 @@ variable "ipset" {
 }
 
 variable "common_tags" {
-  type = map
+  description = "Define the common tags scheme for resources"
+  type        = map(any)
 }
 
 variable "acl_name" {
-  default = "IPWhiteListWebACL"
-
+  type        = string
+  default     = "IPWhiteListWebACL"
+  description = "The name of the acl"
 }
 
 variable "metric_name" {
+  type    = string
   default = "IPWhiteListWebACL"
 
 }

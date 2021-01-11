@@ -5,7 +5,7 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
-Terraform module - creates global WAF
+Terraform module - creates global WAF.
 
 ---
 
@@ -43,8 +43,8 @@ No requirements.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| acl\_name | n/a | `string` | `"IPWhiteListWebACL"` | no |
-| common\_tags | n/a | `map` | n/a | yes |
+| acl\_name | The name of the acl | `string` | `"IPWhiteListWebACL"` | no |
+| common\_tags | Define the common tags scheme for resources | `map(any)` | n/a | yes |
 | ipset | Complex object to describe and populate aws\_waf\_ipset | `any` | n/a | yes |
 | metric\_name | n/a | `string` | `"IPWhiteListWebACL"` | no |
 
@@ -79,7 +79,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2020 James Woolfenden
+Copyright © 2019-2021 James Woolfenden
 
 ## License
 
