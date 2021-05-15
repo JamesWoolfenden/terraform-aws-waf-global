@@ -1,6 +1,5 @@
 
 variable "ipset" {
-  type = map(any)
 }
 
 variable "common_tags" {
