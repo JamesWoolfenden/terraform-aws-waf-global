@@ -1,0 +1,8 @@
+resource "aws_cloudwatch_log_group" "wafexample" {
+  name_prefix       = "WAF"
+  retention_in_days = 15
+  kms_key_id        = var.kms_key_id
+}
+
+variable "kms_key_id" {
+}
