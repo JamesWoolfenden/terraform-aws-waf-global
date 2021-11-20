@@ -7,7 +7,9 @@ resource "aws_waf_web_acl" "ip_whitelist" {
     type = "BLOCK"
   }
 
-
+  logging_configuration {
+    log_destination = aws_cloudwatch_log_group.wafexample.arn
+  }
 
   rules {
     action {
